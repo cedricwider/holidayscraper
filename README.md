@@ -3,7 +3,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rtec'
+gem 'holiday_screaper'
 ```
 
 And then execute:
@@ -12,11 +12,14 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install rtec
+    $ gem install holiday_scraper
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+scraper = HolidayScraper::Scraper.new
+events = HolidayScraper::Parser.new.parse(scraper.page)
+```
 
 ## Development
 
@@ -26,7 +29,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/cedricwider/rtec. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/cedricwider/holidayscraper. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 
 ## License
