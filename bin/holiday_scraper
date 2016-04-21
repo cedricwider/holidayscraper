@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/holiday_scraper'
+
+scraper = HolidayScraper::Scraper.new
+events = HolidayScraper::Parser.new.parse(scraper.page)
+
+events.each do |event|
+  event_out = "#{event.name}: #{event.start_date}"
+  event_out += " - #{event.end_date}" if event.end_date
+  puts event_out
+end
+

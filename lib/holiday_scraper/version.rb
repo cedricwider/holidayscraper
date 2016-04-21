@@ -1,0 +1,3 @@
+module HolidayScraper
+  VERSION = '0.0.2'
+end
