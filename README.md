@@ -3,7 +3,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'holiday_screaper'
+gem 'holiday_scraper'
 ```
 
 And then execute:
